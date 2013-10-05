@@ -1,0 +1,204 @@
+/* RESPONSIVE BREAK POINTS */
+@mixin media($target){
+	@if $target == tablet-wide {
+  		@media only screen and (max-device-width: 1024px){
+			@content;
+		}
+	} @else if $target == tablet-tall {
+  		@media only screen and (max-device-width: 750px){
+			@content;
+		}		
+	} @else if $target == mobile {
+  		@media only screen and (max-device-width: 400px){
+			@content;
+		}		
+	}
+}
+
+
+/* COLOR PALETTE */
+$lighter-blue: #1e77d2;
+$darker-blue: #0069d6;
+
+/* CUSTOM FONTS */
+@font-face {
+  font-family: 'Museo-300';
+  src: url("../fonts/253683_0_0.eot");
+  src: url("../fonts/253683_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/253683_0_0.woff") format("woff"), url("../fonts/253683_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Museo-500';
+  src: url("../fonts/253683_1_0.eot");
+  src: url("../fonts/253683_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/253683_1_0.woff") format("woff"), url("../fonts/253683_1_0.ttf") format("truetype");
+}
+
+
+
+
+html {
+	font-size: 62.5%;
+}
+
+html, body {
+  background: #f6f6f6;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #ffffff;
+	padding: 15px;
+	@include media(tablet-wide){
+		width: 90%;
+		padding: 15px 5%;
+	}
+}
+
+.container-title {
+	text-align: center; 
+	border-bottom: 1px solid #dedede; 
+	padding-bottom: 12px;
+	@include media(mobile){
+		margin-top: 0;
+		padding-bottom: 30px;
+	}
+}
+
+ul.container-nav {
+	list-style: none;
+	margin: -20px 0 -3px 0;
+	padding: 0 0 15px 0;
+	overflow: hidden;
+	text-align: center;
+	li {
+		display: inline-block;
+		margin-right: 15px;
+		a {
+			color: $lighter-blue;
+			display: block;
+			padding: 10px 15px;
+			text-decoration: none;
+		}
+	}
+	li.current {
+		font-weight: bold;
+		border-bottom: 3px solid $darker-blue;
+		a {
+			padding: 10px 5px;
+		}
+	}
+}
+
+h1 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 6px;
+}
+
+h1.hero {
+	padding: 0 10px;
+	font-size: 75px;
+	font-size: 7.5rem;
+}
+
+h2 {
+  @include media(mobile){
+  	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+header.container {
+	background: $lighter-blue;
+	border-bottom: 10px solid $darker-blue;
+	h1.hero {
+		color: #ffffff;
+	}
+}
+
+ul#companies-who-use {
+	li {
+		display: inline-block; 
+		margin-right: 50px;
+	}
+}
+
+a {
+	color: #50a4da;
+}
+
+form .input {
+  margin-left: 0;
+}
+
+form.centered-form {
+	width: 100%;
+	input, label {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	label {
+		text-align: center;
+		padding: 8px 0 5px 0;
+	}
+}
+
+input[type=text], input[type=password] {
+	padding: 5px 3px;
+	font-size: 18px;
+	font-size: 1.8rem;
+	margin-left: 10px;
+}
+
+.button {
+	display: block;
+	font-size: 15px;
+	font-size: 1.5rem;
+	background-color: $lighter-blue;
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	border-radius: 0;
+	color: #ffffff;
+	border: none;
+	border-bottom: 5px solid #efefef;
+	text-decoration: none;
+	padding-top: 17px;
+	text-transform: uppercase;
+	@include media(mobile){
+	}
+}
+
+input.button {
+	height: 50px;
+	padding-top: 5px;
+	margin-top: 12px;
+	-webkit-appearance: none;
+}
+
+.button.small {
+	height: 15px !important;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.button:hover {
+	background: $darker-blue;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.button:active {
+	border-bottom: 3px solid #d0cfcf;
+}
+
