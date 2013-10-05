@@ -86,7 +86,9 @@ header.container {
 
 ul#companies-who-use li {
   display: inline-block;
-  margin-right: 50px; }
+  margin-right: 75px; }
+  ul#companies-who-use li img {
+    height: 75px; }
 
 a {
   color: #50a4da; }
