@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script src="http://platform.linkedin.com/in.js" type="text/javascript">
+		        api_key: y6bmlsis7k4r
+		</script>
+	</head>
+	<body>
+		<header class="container">
+			<img src="images/logo.png" height="40" style="margin-left: 5px;"/>
+			<ul id="nav">
+				<li>Already use mocksy? <a href="#">Sign in</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			
+			<img src="images/demo-profile.png" style="display: block; margin-left: auto; margin-right: auto; width: 150px; border-radius: 75px; margin-bottom: 10px;"/>
+		
+			<form class="centered-form" method="post" action="interviewers.html">
+				<span class="paired-inputs">
+					<span>
+						<label>First name</label>
+						<input type="text" value="Ben">
+					</span>
+					<span>
+						<label>Last name</label>
+						<input type="text" value="Davis">
+					</span>
+				</span>
+				<p style="font-size: 22px; text-align: center; color: #353535;">What kind of jobs will you be interviewing for?</p>
+				<span class="checkbox">
+					<input type="checkbox" id="frontend" /><label for="frontend">Front-end web development</label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" id="backend" /><label for="backend">Back-end web development</label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" id="mobile" /><label for="mobile">Mobile development</label>
+				</span>
+				<span class="checkbox">
+					<input type="checkbox" id="interaction" /><label for="interaction">Interaction design</label>
+				</span>
+				<input type="submit" class="button" value="Create profile">
+			</form>
+		</div>
+	</body>
+</html>

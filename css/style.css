@@ -35,8 +35,7 @@ body {
 
 .container-title {
   text-align: center;
-  border-bottom: 1px solid #dedede;
-  padding-bottom: 12px; }
+  padding-bottom: 0; }
   @media only screen and (max-device-width: 400px) {
     .container-title {
       margin-top: 0;
@@ -67,21 +66,29 @@ h1 {
   font-size: 3.6rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
-  letter-spacing: 6px; }
+  letter-spacing: 4px; }
 
 h1.hero {
   padding: 0 10px;
   font-size: 75px;
-  font-size: 7.5rem; }
+  font-size: 7.5rem;
+  font-weight: 100; }
 
 @media only screen and (max-device-width: 400px) {
   h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; } }
 
 header.container {
+  background: transparent; }
+  header.container ul#nav {
+    list-style: none;
+    display: inline-block;
+    float: right; }
+
+div.hero {
   background: #1e77d2;
   border-bottom: 10px solid #0069d6; }
-  header.container h1.hero {
+  div.hero h1.hero {
     color: #ffffff; }
 
 ul#companies-who-use li {
@@ -89,6 +96,27 @@ ul#companies-who-use li {
   margin-right: 75px; }
   ul#companies-who-use li img {
     height: 75px; }
+
+div.interviewer-blurb {
+  width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px; }
+  div.interviewer-blurb img {
+    height: 150px;
+    border-radius: 75px; }
+  div.interviewer-blurb span {
+    width: 300px;
+    float: right;
+    display: inline-block; }
+    div.interviewer-blurb span h2 {
+      font-weight: 200;
+      margin-bottom: -8px; }
+    div.interviewer-blurb span p {
+      color: #666666; }
+
+p.request-sent {
+  display: none; }
 
 a {
   color: #50a4da; }
@@ -105,6 +133,32 @@ form.centered-form {
   form.centered-form label {
     text-align: center;
     padding: 8px 0 5px 0; }
+  form.centered-form span.paired-inputs {
+    display: block;
+    width: 454px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 26px; }
+    form.centered-form span.paired-inputs span {
+      display: inline-block;
+      width: 225px; }
+    form.centered-form span.paired-inputs input, form.centered-form span.paired-inputs label {
+      display: inline-block;
+      margin-left: 0;
+      margin-right: 0; }
+  form.centered-form span.checkbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    display: block;
+    margin-bottom: 10px; }
+    form.centered-form span.checkbox input {
+      display: inline-block;
+      float: left; }
+    form.centered-form span.checkbox label {
+      display: inline-block;
+      padding-left: 10px;
+      padding-top: 0; }
 
 input[type=text], input[type=password] {
   padding: 5px 3px;
