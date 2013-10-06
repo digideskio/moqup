@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+		<script type="text/javascript" src="js/main.js"/>
+		<script src="http://platform.linkedin.com/in.js" type="text/javascript">
+		        api_key: y6bmlsis7k4r
+		</script>
+		<script type="text/javascript">
+			Parse.initialize("q9qo9K0qBACq2pXQ3iwV3XMUK3gZPRnxfum41IHH", "LcZ0U7R8XdAOdpNc9ZHeFcGv1l8ZHIhThcQpfJVN");
+			var User = Parse.Object.extend("User");
+			var newUser = new User();
+			newUser.save({username: "ben.davis.ok@gmail.com"}, {
+			  success: function(object) {
+			    alert("yay! it worked");
+			  }
+			});
+		</script>
+		<link rel="stylesheet" href="css/lib/codemirror.css">
+		<script src="js/lib/codemirror.js"></script>
+	</head>
+	<body>
+		<header class="container">
+			<img src="images/logo.png" height="40" style="margin-left: 5px;"/>
+			<ul id="nav">
+				<li><strong>Hi, Ben!</strong> Thanks for using mocksy.</li>
+			</ul>
+		</header>
+		<div class="container" style="border-bottom: 6px solid #1e77d2; padding-bottom: 0;">
+			<h1 class="container-title">Your interview with <span style="font-weight: 200;">Cody De La Vara</span></h1>
+		</div>
+		<div class="container" style="padding-top: 25px; border-top: 4px solid #dedede;">
+			  <form style="position: relative; margin-top: .5em;"><textarea id=demotext>
+			<!-- Create a simple CodeMirror instance -->
+			<link rel="stylesheet" href="lib/codemirror.css">
+			<script src="js/lib/codemirror.js"></script>
+			<script>
+			  var editor = CodeMirror.fromTextArea(myTextarea, {
+			    mode: "text/html"
+			  });
+			</script></textarea>
+		</div>	
+		<script>
+		    var editor = CodeMirror.fromTextArea(document.getElementById("demotext"), {
+		      lineNumbers: true,
+		      mode: "javascript",
+		      matchBrackets: true
+		    });
+		  </script>
+	</body>
+</html>
