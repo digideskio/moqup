@@ -4,14 +4,23 @@
   		@media only screen and (max-device-width: 1024px){
 			@content;
 		}
+		@media only screen and (max-width: 1024px){
+			@content;
+		}
 	} @else if $target == tablet-tall {
   		@media only screen and (max-device-width: 750px){
 			@content;
-		}		
+		}	
+		@media only screen and (max-width: 750px){
+			@content;
+		}	
 	} @else if $target == mobile {
   		@media only screen and (max-device-width: 400px){
 			@content;
-		}		
+		}
+		@media only screen and (max-width: 400px){
+			@content;
+		}
 	}
 }
 
@@ -109,6 +118,15 @@ h1.hero {
 	font-size: 75px;
 	font-size: 7.5rem;
 	font-weight: 100;
+	@include media(tablet-wide){
+		font-size: 60px;
+		font-size: 6.0rem;
+		padding: 0;
+	}
+	@include media(mobile){
+		font-size: 40px;
+		font-size: 4.0rem;
+	}
 }
 
 h2 {
@@ -119,10 +137,25 @@ h2 {
 
 header.container {
 	background: transparent;
+	@include media(tablet-wide){
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	img#logo {
+		@include media(mobile){
+			height: 30px;
+		}
+	}
 	ul#nav {
 		list-style: none;
 		display: inline-block;
 		float: right;
+		margin-top: 0;
+		@include media(mobile){
+			margin-top: -12px;
+		}
 	}
 }
 
@@ -131,6 +164,9 @@ div.hero {
 	border-bottom: 10px solid $darker-blue;
 	h1.hero {
 		color: #ffffff;
+		@include media(mobile){
+			margin: 0;
+		}
 	}
 }
 

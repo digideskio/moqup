@@ -2,19 +2,21 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/style.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/main.js"></script>
 		<script src="http://platform.linkedin.com/in.js" type="text/javascript">
 		        api_key: y6bmlsis7k4r
 		</script>
 	</head>
 	<body>
 		<header class="container">
-			<img src="images/logo.png" height="40" style="margin-left: 5px;"/>
+			<img src="images/logo.png" height="40" style="margin-left: 5px;" id="logo" />
 			<ul id="nav">
-				<li>Already use mocksy? <a href="#">Sign in</a></li>
+				<li><a href="invites.html" style="display: inline-block; background: #dbad32; width: 100px; height: 35px; border-radius: 25px; color: #ffffff; text-decoration: none; text-align: center; padding-top: 15px;">sign in</a></li>
 			</ul>
 		</header>
 		<div class="container hero">
-			<h1 class="hero">Mock interviews from the best in the industry.</h1>
+			<h1 class="hero">Mock interviews from the best in the industry</h1>
 		</div>
 		<div class="container" style="border-bottom: 5px solid #1e77d2;">
 			<ul id="companies-who-use" style="list-style: none; padding: 0 10px; text-align: center;">
@@ -24,10 +26,9 @@
 			</ul>
 		</div>
 		<div class="container" style="">
-			<span style="display: block; text-align: center;">
+			<span style="display: block; text-align: center;" id="signup-area">
 				<span style="color: #666666; size: 18px; display: block; margin-bottom: 15px;">Schedule your first mock interview now</span>
-				<script type="in/Login">
-				</script>
+				<a href="auth.html"><img src="images/sign-in.png" height="20"/></a>
 			</span>
 		</div>
 	</body>

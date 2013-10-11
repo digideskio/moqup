@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"/>
+		<script src="http://platform.linkedin.com/in.js" type="text/javascript">
+		        api_key: y6bmlsis7k4r
+		</script>
+		
+		<style>
+			div.message	{
+				display: none;
+			}
+			
+			div#typing-indicator	{
+				display: none;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header class="container">
+			<img src="images/logo.png" height="40" style="margin-left: 5px;"/>
+			<ul id="nav">
+				<li><strong>Hi, Ben!</strong> Thanks for using moxy.</li>
+			</ul>
+		</header>
+		<div class="container" style="border-bottom: 6px solid #1e77d2; padding-bottom: 0;">
+			<h1 class="container-title">Schedule an interview</h1>
+		</div>
+		<div class="container" style="padding-top: 25px; border-top: 4px solid #dedede; border-bottom: 1px solid #dedede;">
+			<div class="interviewer-blurb" style="width: 420px; margin-bottom: 15px;">
+				<img src="images/profile-photos/maboo.jpg" style="height: 75px; margin-top: 10px; margin-left: 45px;">
+				<span style="width: 255px;">
+					<h2>Mahbod Moghadam</h2>
+					<p>Party Engineer at Rap Genius</p>
+					<p class="request-sent"><strong>Great!</strong> We have sent your request and will let you know if it is accepted.</p>
+				</span>
+			</div>
+		</div>
+		<div class="container">
+			<p style="font-size: 18px; color: #666666; text-align: center;">When can you do the interview? Give your interviewer several days to choose from.</p>
+			
+			<div id="our-first-message" class="message" style="margin: 0 10px;">
+				<strong style="display: block; margin-bottom: -8px;">You </strong> <p></p>
+			</div>
+			
+			<div style="float: right;" id="typing-indicator"><img src="images/typing.gif" style="width: 32px; height: 22px; margin-right: 10px; margin-bottom: 10px;"></div>
+			
+			<div id="his-message" class="message" style="margin: 0 10px; text-align: right;">
+				<strong style="display: block; margin-bottom: -8px;">Mahbod </strong> <p>Hey, Ben. This Wednesday looks good. How's 11:45? Call me at 819-192-1044.</p>
+			</div>
+			
+			<div id="our-second-message" class="message" style="margin: 0 10px;">
+				<strong style="display: block; margin-bottom: -8px;">You </strong> <p></p>
+			</div>
+			
+			<form action="#" style="margin-top: 20px; display: block;">
+				<input type="text" id="chat-input" style="width: 930px; height: 50px; font-size: 18px; padding: 3px;"/>
+			</form>
+		</div>
+	</body>
+</html>

@@ -32,11 +32,19 @@ body {
     .container {
       width: 90%;
       padding: 15px 5%; } }
+  @media only screen and (max-width: 1024px) {
+    .container {
+      width: 90%;
+      padding: 15px 5%; } }
 
 .container-title {
   text-align: center;
   padding-bottom: 0; }
   @media only screen and (max-device-width: 400px) {
+    .container-title {
+      margin-top: 0;
+      padding-bottom: 30px; } }
+  @media only screen and (max-width: 400px) {
     .container-title {
       margin-top: 0;
       padding-bottom: 30px; } }
@@ -73,23 +81,75 @@ h1.hero {
   font-size: 75px;
   font-size: 7.5rem;
   font-weight: 100; }
+  @media only screen and (max-device-width: 1024px) {
+    h1.hero {
+      font-size: 60px;
+      font-size: 6.0rem;
+      padding: 0; } }
+  @media only screen and (max-width: 1024px) {
+    h1.hero {
+      font-size: 60px;
+      font-size: 6.0rem;
+      padding: 0; } }
+  @media only screen and (max-device-width: 400px) {
+    h1.hero {
+      font-size: 40px;
+      font-size: 4.0rem; } }
+  @media only screen and (max-width: 400px) {
+    h1.hero {
+      font-size: 40px;
+      font-size: 4.0rem; } }
 
 @media only screen and (max-device-width: 400px) {
+  h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; } }
+@media only screen and (max-width: 400px) {
   h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; } }
 
 header.container {
   background: transparent; }
+  @media only screen and (max-device-width: 1024px) {
+    header.container {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media only screen and (max-width: 1024px) {
+    header.container {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media only screen and (max-device-width: 400px) {
+    header.container img#logo {
+      height: 30px; } }
+  @media only screen and (max-width: 400px) {
+    header.container img#logo {
+      height: 30px; } }
   header.container ul#nav {
     list-style: none;
     display: inline-block;
-    float: right; }
+    float: right;
+    margin-top: 0; }
+    @media only screen and (max-device-width: 400px) {
+      header.container ul#nav {
+        margin-top: -12px; } }
+    @media only screen and (max-width: 400px) {
+      header.container ul#nav {
+        margin-top: -12px; } }
 
 div.hero {
   background: #1e77d2;
   border-bottom: 10px solid #0069d6; }
   div.hero h1.hero {
     color: #ffffff; }
+    @media only screen and (max-device-width: 400px) {
+      div.hero h1.hero {
+        margin: 0; } }
+    @media only screen and (max-width: 400px) {
+      div.hero h1.hero {
+        margin: 0; } }
 
 ul#companies-who-use li {
   display: inline-block;
